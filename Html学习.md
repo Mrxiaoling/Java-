@@ -39,3 +39,21 @@ HTML 标题（Heading）是通过 <h1> - <h6> 等标签进行定义的。
 ### 2.1.2、HTML 段落
 
 HTML 段落是通过 <p> 标签进行定义的。
+
+### 2.1.3、HTML 链接
+
+HTML 链接是通过 <a> 标签进行定义的，在 href 属性中指定链接的地址。
+
+```html
+<a href="http://www.w3school.com.cn">This is a link</a>
+```
+
+### 2.1.4、HTML 图像
+
+HTML 图像是通过 <img> 标签进行定义的,图像的名称和尺寸是以属性的形式提供的。
+
+```html
+<img src="w3school.jpg" width="104" height="142" />
+```
+
+![splash_sheep_newyear](assets/splash_sheep_newyear.png)
