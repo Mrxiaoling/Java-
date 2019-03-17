@@ -144,5 +144,5 @@ name='Bill "HelloWorld" Gates'
 
 ### 2.3.5、HTML 属性参考手册
 
-链接：[](http://www.w3school.com.cn/tags/index.asp)
+链接：<http://www.w3school.com.cn/tags/index.asp>
 
