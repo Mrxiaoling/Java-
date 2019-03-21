@@ -146,3 +146,148 @@ name='Bill "HelloWorld" Gates'
 
 链接：<http://www.w3school.com.cn/tags/index.asp>
 
+## 2.4、HTML 标题
+
+标题（Heading）是通过 \<h1> - \<h6> 等标签进行定义的。
+
+\<h1> 定义最大的标题。\<h6> 定义最小的标题。(浏览器会自动地在标题的前后添加空行。默认情况下，HTML 会自动地在块级元素前后添加一个额外的空行，比如段落、标题元素前后。)
+
+### 2.4.1、HTML 水平线
+
+\<hr /> 标签在 HTML 页面中创建水平线。
+
+hr 元素可用于分隔内容。
+
+```html
+<p>This is a paragraph</p>
+<hr />
+<p>This is a paragraph</p>
+<hr />
+<p>This is a paragraph</p>
+```
+
+### 2.4.2、HTML 注释
+
+可以将注释插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。浏览器会忽略注释，也不会显示它们。注释是这样写的：
+
+```html
+<!-- This is a comment -->
+```
+
+## 2.5、HTML段落
+
+段落是通过 \<p> 标签定义的。浏览器会自动地在段落的前后添加空行。（\<p> 是块级元素）
+
+**提示：**使用空的段落标记\<p>\</p> 去插入一个空行是个坏习惯。
+
+2.5.1、HTML 折行
+
+如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 \<br /> 标签：
+
+```html
+<p>This is<br />a para<br />graph with line breaks</p>
+```
+
+\<br /> 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。
+
+您也许发现 \<br> 与 \<br /> 很相似。
+
+在 XHTML、XML 以及未来的 HTML 版本中，不允许使用没有结束标签（闭合标签）的 HTML 元素。
+
+即使\<br> 在所有浏览器中的显示都没有问题，使用 \<br /> 也是*更长远的保障*。
+
+## 2.6、HTML样式
+
+## 2.7、HTML格式化
+
+## 2.8、HTML引用
+
+引用（Quotation）
+
+### 2.8.1、短引用
+
+HTML \<q> 用于短的引用
+
+HTML *\<q>* 元素定义*短的引用*。
+
+浏览器通常会为 \<q> 元素包围*引号*。
+
+```html
+<p>WWF 的目标是：<q>构建人与自然和谐共存的世界。</q></p>
+```
+
+### 2.8.2、长引用
+
+用于长引用的 HTML \<blockquote>HTML *\<blockquote>* 元素定义被引用的节。
+
+浏览器通常会对 \<blockquote> 元素进行*缩进*处理。
+
+```html
+<p>以下内容引用自 WWF 的网站：</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+五十年来，WWF 一直致力于保护自然界的未来。
+世界领先的环保组织，WWF 工作于 100 个国家，
+并得到美国一百二十万会员及全球近五百万会员的支持。
+</blockquote>
+```
+
+### 2.8.3、用于缩略词的 HTML \<abbr>
+
+HTML *\<abbr>* 元素定义*缩写*或首字母缩略语。
+
+对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息。
+
+```html
+<p><abbr title="World Health Organization">WHO</abbr> 成立于 1948 年。</p>
+```
+
+### 2.8.4、用于定义的 HTML \<dfn>
+
+HTML *\<dfn>* 元素定义项目或缩写的*定义*。
+
+\<dfn> 的用法，按照 HTML5 标准中的描述，有点复杂：
+
+1、如果设置了 \<dfn> 元素的 title 属性，则定义项目：
+
+```html
+<p><dfn title="World Health Organization">WHO</dfn> 成立于 1948 年。</p>
+```
+
+2、如果 \<dfn> 元素包含具有标题的 \<abbr> 元素，则 title 定义项目：
+
+```HTML
+<p><dfn><abbr title="World Health Organization">WHO</abbr></dfn> 成立于 1948 年。</p>
+```
+
+3、否则，\<dfn> 文本内容即是项目，并且父元素包含定义。
+
+```HTML
+<p><dfn>WHO</dfn> World Health Organization 成立于 1948 年。</p>
+```
+
+### 2.8.5、用于联系信息的 HTML <address>
+
+HTML *<address>* 元素定义文档或文章的联系信息（作者/拥有者）。
+
+此元素通常以*斜体*显示。大多数浏览器会在此元素前后添加折行。
+
+```
+<address>
+Written by Donald Duck.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+```
+
+### 2.8.6、用于著作标题的 HTML \<cite>
+
+HTML *\<cite>* 元素定义*著作的标题*。
+
+浏览器通常会以斜体显示 \<cite> 元素。
+
+```HTML 
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+```
+
